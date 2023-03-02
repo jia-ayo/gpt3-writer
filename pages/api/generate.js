@@ -22,6 +22,7 @@ const generateAction = async (req, res) => {
     max_tokens: 250,
   });
   
+  
   const basePromptOutput = baseCompletion.data.choices.pop();
 
   // I build Prompt #2.
