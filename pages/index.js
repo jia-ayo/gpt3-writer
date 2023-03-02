@@ -52,7 +52,7 @@ const Home = () => {
             value={userInput}
             onChange={onUserChangedText}
           />
-          {/* New code I added here */}
+          {/* this button for the loading*/}
           <div className="prompt-buttons">
              <a
                className={isGenerating ? 'generate-button loading' : 'generate-button'}
@@ -63,7 +63,7 @@ const Home = () => {
                </div>
              </a>
           </div>
-          {/* New code I added here */}
+          {/* the output generated */}
           {apiOutput && (
             <div className="output">
               <div className="output-header-container">
